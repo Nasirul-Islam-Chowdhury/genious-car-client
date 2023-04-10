@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "price": 20.00,
+      "title": "2021 Toyota Camry",
+      "image_url": "https://cdn.jdpower.com/JDPA_2021%20Toyota%20Camry%20TRD%20White%20Front%20Quarter.jpg"
+    },
+    {
+      "id": 2,
+      "price": 30.00,
+      "title": "2022 Honda Civic",
+      "image_url": "https://www.cnet.com/a/img/resize/7876dbb5d916180072c8d8e0a4ae8a9f3d303c3d/hub/2021/06/25/7ce0f6be-f64a-4815-8573-c341070a9f40/ogi1-2022-honda-civic-sport-sedan-007.jpg?auto=webp&fit=crop&height=675&width=1200"
+    },
+    {
+      "id": 3,
+      "price": 40.00,
+      "title": "2021 Ford Mustang",
+      "image_url": "https://cdn.jdpower.com/JDPA_2021%20Ford%20Mustang%20Mach%201%20Blue%20Front%20View.jpg"
+    },
+    {
+      "id": 4,
+      "price": 50.00,
+      "title": "2022 Tesla Model S",
+      "image_url": "https://www.thedrive.com/content/2021/07/tesla-plaid-lead.jpg?quality=85"
+    },
+      {
+      "id": 5,
+      "price": 30.00,
+      "title": "2022 Honda Civic",
+      "image_url": "https://www.cnet.com/a/img/resize/7876dbb5d916180072c8d8e0a4ae8a9f3d303c3d/hub/2021/06/25/7ce0f6be-f64a-4815-8573-c341070a9f40/ogi1-2022-honda-civic-sport-sedan-007.jpg?auto=webp&fit=crop&height=675&width=1200"
+    },
+    {
+      "id": 6,
+      "price": 20.00,
+      "title": "2021 Toyota Camry",
+      "image_url": "https://cdn.jdpower.com/JDPA_2021%20Toyota%20Camry%20TRD%20White%20Front%20Quarter.jpg"
+    }
+  ]

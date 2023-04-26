@@ -3,6 +3,9 @@ import Main from "../../Layout/Main";
 import Home from "../../Pages/Home/Home/Home";
 import Login from "../../Pages/Login/Login";
 import Signup from "../../Pages/Signup/Signup";
+import Checkout from "../../Pages/Checkout/Checkout";
+import Orders from "../../Pages/Orders/Orders";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
 const router = createBrowserRouter([
 {
@@ -20,6 +23,16 @@ const router = createBrowserRouter([
         {
             path: '/login',
             element: <Login/>
+        },
+        {
+            path: '/checkout/:id',
+            element: <PrivateRoute><Checkout/></PrivateRoute>,
+            loader: ({params})=> fetch(`https://genius-car-server-sooty-six.vercel.app/services/${params.id}`)
+        },
+        {
+            path: '/orders',
+            element: <PrivateRoute><Orders/></PrivateRoute>,
+            loader: ({params})=> fetch(`https://genius-car-server-sooty-six.vercel.app/orders`)
         }
     ]
 }

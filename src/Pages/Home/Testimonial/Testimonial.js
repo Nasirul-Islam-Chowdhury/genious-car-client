@@ -31,21 +31,21 @@ const Testimonial = () => {
         modules={[FreeMode, Pagination]}
       >
         <SwiperSlide>
-          <section class="text-gray-600">
-  <div class="container lg:px-5  mx-auto">
-      <div class="lg:p-4 w-full">
-        <div class="h-full lg:p-8 rounded">
-        <div class="flex justify-between items-center mb-2">
-            <img alt="testimonial" src={person1} class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"/>
-            <span class="flex-grow flex flex-col  pl-4">
-              <span class="title-font text-xl font-medium text-gray-900">Kodom ali</span>
-              <span class="text-gray-500 text-sm">Businessman</span>
+          <section className="text-gray-600">
+  <div className="container lg:px-5  mx-auto">
+      <div className="lg:p-4 w-full">
+        <div className="h-full lg:p-8 rounded">
+        <div className="flex justify-between items-center mb-2">
+            <img alt="testimonial" src={person1} className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"/>
+            <span className="flex-grow flex flex-col  pl-4">
+              <span className="title-font text-xl font-medium text-gray-900">Kodom ali</span>
+              <span className="text-gray-500 text-sm">Businessman</span>
             </span>
             <figure>
               <img src={img}  className='w-16 opacity-10' alt="" />
             </figure>
           </div>
-          <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
+          <p className="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
           <div>
         <div className='flex justify-start gap-1'>
                 <FaStar className='w-8 h-6 text-orange-500'/>
@@ -62,21 +62,21 @@ const Testimonial = () => {
 </section>
         </SwiperSlide>
         <SwiperSlide>
-          <section class="text-gray-600">
-  <div class="container px-5  mx-auto">
-      <div class="lg:p-4 w-full">
-        <div class="h-full lg:p-8 rounded">
-        <div class="flex justify-between items-center mb-2">
-            <img alt="testimonial" src={person2} class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"/>
-            <span class="flex-grow flex flex-col  pl-4">
-              <span class="title-font text-xl font-medium text-gray-900">Md KUddus</span>
-              <span class="text-gray-500 text-sm">Businessman</span>
+          <section className="text-gray-600">
+  <div className="container px-5  mx-auto">
+      <div className="lg:p-4 w-full">
+        <div className="h-full lg:p-8 rounded">
+        <div className="flex justify-between items-center mb-2">
+            <img alt="testimonial" src={person2} className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"/>
+            <span className="flex-grow flex flex-col  pl-4">
+              <span className="title-font text-xl font-medium text-gray-900">Md KUddus</span>
+              <span className="text-gray-500 text-sm">Businessman</span>
             </span>
             <figure>
               <img src={img}  className='w-16 opacity-10' alt="" />
             </figure>
           </div>
-          <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
+          <p className="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
           <div>
         <div className='flex justify-start gap-1'>
                 <FaStar className='w-8 h-6 text-orange-500'/>
@@ -93,21 +93,21 @@ const Testimonial = () => {
 </section>
         </SwiperSlide>
         <SwiperSlide>
-          <section class="text-gray-600">
-  <div class="container lg:px-5  mx-auto">
-      <div class="lg:p-4 w-full">
-        <div class="h-full lg:p-8 rounded">
-        <div class="flex justify-between items-center mb-2">
-            <img alt="testimonial" src={person3} class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"/>
-            <span class="flex-grow flex flex-col  pl-4">
-              <span class="title-font text-xl font-medium text-gray-900">Alper Kamu</span>
-              <span class="text-gray-500 text-sm">Businessman</span>
+          <section className="text-gray-600">
+  <div className="container lg:px-5  mx-auto">
+      <div className="lg:p-4 w-full">
+        <div className="h-full lg:p-8 rounded">
+        <div className="flex justify-between items-center mb-2">
+            <img alt="testimonial" src={person3} className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"/>
+            <span className="flex-grow flex flex-col  pl-4">
+              <span className="title-font text-xl font-medium text-gray-900">Alper Kamu</span>
+              <span className="text-gray-500 text-sm">Businessman</span>
             </span>
             <figure>
               <img src={img}  className='w-16 opacity-10' alt="" />
             </figure>
           </div>
-          <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
+          <p className="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
           <div>
         <div className='flex justify-start gap-1'>
                 <FaStar className='w-8 h-6 text-orange-500'/>
@@ -124,21 +124,21 @@ const Testimonial = () => {
 </section>
         </SwiperSlide>
         <SwiperSlide>
-          <section class="text-gray-600">
-  <div class="container lg:px-5  mx-auto">
-      <div class="lg:p-4 w-full">
-        <div class="h-full lg:p-8 rounded">
-        <div class="flex justify-between items-center mb-2">
-            <img alt="testimonial" src={person1} class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"/>
-            <span class="flex-grow flex flex-col  pl-4">
-              <span class="title-font text-xl font-medium text-gray-900">NX Najat</span>
-              <span class="text-gray-500 text-sm">Businessman</span>
+          <section className="text-gray-600">
+  <div className="container lg:px-5  mx-auto">
+      <div className="lg:p-4 w-full">
+        <div className="h-full lg:p-8 rounded">
+        <div className="flex justify-between items-center mb-2">
+            <img alt="testimonial" src={person1} className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"/>
+            <span className="flex-grow flex flex-col  pl-4">
+              <span className="title-font text-xl font-medium text-gray-900">NX Najat</span>
+              <span className="text-gray-500 text-sm">Businessman</span>
             </span>
             <figure>
               <img src={img}  className='w-16 opacity-10' alt="" />
             </figure>
           </div>
-          <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
+          <p className="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
           <div>
         <div className='flex justify-start gap-1'>
                 <FaStar className='w-8 h-6 text-orange-500'/>
@@ -155,21 +155,21 @@ const Testimonial = () => {
 </section>
         </SwiperSlide>
         <SwiperSlide>
-          <section class="text-gray-600">
-  <div class="container lg:px-5  mx-auto">
-      <div class="p-4 w-full">
-        <div class="h-full lg:p-8 rounded">
-        <div class="flex justify-between items-center mb-2">
-            <img alt="testimonial" src={person2} class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"/>
-            <span class="flex-grow flex flex-col  pl-4">
-              <span class="title-font text-xl font-medium text-gray-900">Md Nader</span>
-              <span class="text-gray-500 text-sm">Businessman</span>
+          <section className="text-gray-600">
+  <div className="container lg:px-5  mx-auto">
+      <div className="p-4 w-full">
+        <div className="h-full lg:p-8 rounded">
+        <div className="flex justify-between items-center mb-2">
+            <img alt="testimonial" src={person2} className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"/>
+            <span className="flex-grow flex flex-col  pl-4">
+              <span className="title-font text-xl font-medium text-gray-900">Md Nader</span>
+              <span className="text-gray-500 text-sm">Businessman</span>
             </span>
             <figure>
               <img src={img}  className='w-16 opacity-10' alt="" />
             </figure>
           </div>
-          <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
+          <p className="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
           <div>
         <div className='flex justify-start gap-1'>
                 <FaStar className='w-8 h-6 text-orange-500'/>
@@ -186,21 +186,21 @@ const Testimonial = () => {
 </section>
         </SwiperSlide>
         <SwiperSlide>
-          <section class="text-gray-600">
-  <div class="container lg:px-5  mx-auto">
-      <div class="lg:p-4 w-full">
-        <div class="h-full lg:p-8 rounded">
-        <div class="flex justify-between items-center mb-2">
-            <img alt="testimonial" src={person3} class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"/>
-            <span class="flex-grow flex flex-col  pl-4">
-              <span class="title-font text-xl font-medium text-gray-900">Md Nasirul islam</span>
-              <span class="text-gray-500 text-sm">Businessman</span>
+          <section className="text-gray-600">
+  <div className="container lg:px-5  mx-auto">
+      <div className="lg:p-4 w-full">
+        <div className="h-full lg:p-8 rounded">
+        <div className="flex justify-between items-center mb-2">
+            <img alt="testimonial" src={person3} className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"/>
+            <span className="flex-grow flex flex-col  pl-4">
+              <span className="title-font text-xl font-medium text-gray-900">Md Nasirul islam</span>
+              <span className="text-gray-500 text-sm">Businessman</span>
             </span>
             <figure>
               <img src={img}  className='w-16 opacity-10' alt="" />
             </figure>
           </div>
-          <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
+          <p className="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
           <div>
         <div className='flex justify-start gap-1'>
                 <FaStar className='w-8 h-6 text-orange-500'/>
@@ -217,21 +217,21 @@ const Testimonial = () => {
 </section>
         </SwiperSlide>
         <SwiperSlide>
-          <section class="text-gray-600">
-  <div class="container lg:px-5  mx-auto">
-      <div class="lg:p-4 w-full">
-        <div class="h-full p-8 rounded">
-        <div class="flex justify-between items-center mb-2">
-            <img alt="testimonial" src={person1} class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"/>
-            <span class="flex-grow flex flex-col  pl-4">
-              <span class="title-font text-xl font-medium text-gray-900">Nahidul Islam</span>
-              <span class="text-gray-500 text-sm">Businessman</span>
+          <section className="text-gray-600">
+  <div className="container lg:px-5  mx-auto">
+      <div className="lg:p-4 w-full">
+        <div className="h-full p-8 rounded">
+        <div className="flex justify-between items-center mb-2">
+            <img alt="testimonial" src={person1} className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"/>
+            <span className="flex-grow flex flex-col  pl-4">
+              <span className="title-font text-xl font-medium text-gray-900">Nahidul Islam</span>
+              <span className="text-gray-500 text-sm">Businessman</span>
             </span>
             <figure>
               <img src={img}  className='w-16 opacity-10' alt="" />
             </figure>
           </div>
-          <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
+          <p className="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
           <div>
         <div className='flex justify-start gap-1'>
                 <FaStar className='w-8 h-6 text-orange-500'/>
@@ -248,21 +248,21 @@ const Testimonial = () => {
 </section>
         </SwiperSlide>
         <SwiperSlide>
-          <section class="text-gray-600">
-  <div class="container lg:px-5  mx-auto">
-      <div class="p-4 w-full">
-        <div class="h-full lg:p-8 rounded">
-        <div class="flex justify-between items-center mb-2">
-            <img alt="testimonial" src={person2} class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"/>
-            <span class="flex-grow flex flex-col  pl-4">
-              <span class="title-font text-xl font-medium text-gray-900">Mr Safayat</span>
-              <span class="text-gray-500 text-sm">Businessman</span>
+          <section className="text-gray-600">
+  <div className="container lg:px-5  mx-auto">
+      <div className="p-4 w-full">
+        <div className="h-full lg:p-8 rounded">
+        <div className="flex justify-between items-center mb-2">
+            <img alt="testimonial" src={person2} className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"/>
+            <span className="flex-grow flex flex-col  pl-4">
+              <span className="title-font text-xl font-medium text-gray-900">Mr Safayat</span>
+              <span className="text-gray-500 text-sm">Businessman</span>
             </span>
             <figure>
               <img src={img}  className='w-16 opacity-10' alt="" />
             </figure>
           </div>
-          <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
+          <p className="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
           <div>
         <div className='flex justify-start gap-1'>
                 <FaStar className='w-8 h-6 text-orange-500'/>

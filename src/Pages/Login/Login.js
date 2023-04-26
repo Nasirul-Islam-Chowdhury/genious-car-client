@@ -1,12 +1,14 @@
 import React, { useContext, useState } from 'react';
 import img from '../../assets/images/login/login.svg'
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
 import { FaGoogle, FaLinkedin,FaFacebook } from "react-icons/fa";
 
 const Login = () => {
     const {userSignin, googleSignin, facebookSignin} = useContext(AuthContext);
     const navigate = useNavigate();
+    const location = useLocation();
+    const from = location.state?.from?.pathname || '/'
     const [error, setError] = useState("");
     const handleLogin = event => {
         event.preventDefault();
@@ -16,8 +18,24 @@ const Login = () => {
         event.target.reset();
         userSignin(email, password)
         .then(user => {
-            console.log(user.user)
-            navigate('/')
+            // console.log(user.user)
+            const currentUser = {
+                email: user.user.email
+            }
+            // console.log(currentUser)
+            fetch('https://genius-car-server-sooty-six.vercel.app/jwt', {
+                method: "POST",
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(currentUser)
+            })
+            .then(res=>res.json())
+            .then(data=>{
+                console.log(data);
+                localStorage.setItem("geniusToken", data.token)
+                navigate(from, {replace: true})
+            })
         })
         .catch(error => {
             console.log(error)
@@ -26,9 +44,25 @@ const Login = () => {
     }
     const handleGoogleSignin = ()=>{
         googleSignin()
-        .then(res =>{
-            console.log(res.user)
-            navigate('/')
+        .then(user => {
+            // console.log(user.user)
+            const currentUser = {
+                email: user.user.email
+            }
+            // console.log(currentUser)
+            fetch('https://genius-car-server-sooty-six.vercel.app/jwt', {
+                method: "POST",
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(currentUser)
+            })
+            .then(res=>res.json())
+            .then(data=>{
+                console.log(data);
+                localStorage.setItem("geniusToken", data.token)
+                navigate(from, {replace: true})
+            })
         })
         .catch(error=>console.log(error))
     }
@@ -36,7 +70,8 @@ const Login = () => {
         facebookSignin()
         .then(res =>{
             console.log(res.user)
-            navigate('/')
+            navigate(from, {replace: true})
+
         })
         .catch(error=>console.log(error))
     }

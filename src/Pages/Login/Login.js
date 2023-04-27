@@ -3,6 +3,7 @@ import img from '../../assets/images/login/login.svg'
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
 import { FaGoogle, FaLinkedin,FaFacebook } from "react-icons/fa";
+import { setToken } from '../../api/auth';
 
 const Login = () => {
     const {userSignin, googleSignin, facebookSignin} = useContext(AuthContext);
@@ -45,31 +46,17 @@ const Login = () => {
     const handleGoogleSignin = ()=>{
         googleSignin()
         .then(user => {
-            // console.log(user.user)
-            const currentUser = {
-                email: user.user.email
-            }
-            // console.log(currentUser)
-            fetch('https://genius-car-server-sooty-six.vercel.app/jwt', {
-                method: "POST",
-                headers: {
-                    'content-type': 'application/json'
-                },
-                body: JSON.stringify(currentUser)
-            })
-            .then(res=>res.json())
-            .then(data=>{
-                console.log(data);
-                localStorage.setItem("geniusToken", data.token)
-                navigate(from, {replace: true})
-            })
+            console.log(user.user);
+            setToken(user)
         })
+
         .catch(error=>console.log(error))
     }
     const handlefacebookSignin = ()=>{
         facebookSignin()
         .then(res =>{
             console.log(res.user)
+            
             navigate(from, {replace: true})
 
         })

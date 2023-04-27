@@ -3,6 +3,7 @@ import img from '../../assets/images/login/login.svg'
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
 import { FaGoogle, FaLinkedin,FaFacebook } from "react-icons/fa";
+import { setToken } from '../../api/auth';
 
 const Signup = () => {
     const navigate = useNavigate();
@@ -11,6 +12,7 @@ const Signup = () => {
     const handleGoogleSignin = ()=>{
         googleSignin()
         .then(res =>{
+            setToken(res)
             console.log(res.user)
             navigate('/')
         })
@@ -29,10 +31,11 @@ const Signup = () => {
         const form = event.target;
         const email = form.email.value
         const password = form.password.value
-        event.target.reset();
         createUser(email, password)
         .then(user => {
             console.log(user.user)
+            setToken(user)
+            event.target.reset();
             navigate('/')
         })
         .catch(error => setError(error.message))

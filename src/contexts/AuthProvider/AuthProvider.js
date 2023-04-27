@@ -32,7 +32,7 @@ const AuthProvider = ({ children }) => {
         return signInWithPopup(auth, facebookProvider);
     }
     const logOut = ()=>{
-        localStorage.removeItem("geniusToken")
+        localStorage.removeItem("geniusToken");
         signOut(auth)
     }
  

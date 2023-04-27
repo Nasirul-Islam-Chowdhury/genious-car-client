@@ -6,7 +6,6 @@ const Orders = () => {
     
     const { user, logOut } = useContext(AuthContext);
     const [orders, setOrder] = useState([]);
-   
     useEffect(() => {
         fetch(`https://genius-car-server-sooty-six.vercel.app/orders?email=${user?.email}`,{
             headers:{
